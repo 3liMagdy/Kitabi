@@ -2,12 +2,12 @@ import 'package:equatable/equatable.dart';
 
 import 'item.book_moedl.dart';
 
-class  extends Equatable {
+class BookMoedl extends Equatable {
 	final String? kind;
 	final int? totalItems;
 	final List<Item>? items;
 
-	const ({this.kind, this.totalItems, this.items});
+	const BookMoedl ({this.kind, this.totalItems, this.items});
 
 	factory .fromJson(Map<String, dynamic> json) => (
 				kind: json['kind'] as String?,
