@@ -28,8 +28,6 @@ class _SplashViewBodyState extends State<SplashViewBody>
     navigateToHome();
   }
 
-
-
   @override
   void dispose() {
     // TODO: implement dispose
@@ -70,7 +68,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       //   transition: Transition.fade,
       //   duration: kTranstionDuration,
       // );
-      context.go( AppRouter.kHomeView);
+      context.go(AppRouter.kHomeView);
     });
   }
 }

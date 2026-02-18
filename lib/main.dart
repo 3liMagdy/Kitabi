@@ -23,7 +23,6 @@ class Kitabi extends StatelessWidget {
         textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
       ),
       routerConfig: AppRouter.router,
-
     );
   }
 }

@@ -1,7 +1,3 @@
-
-
-
-
 import 'package:flutter/material.dart';
 import 'package:kitabi/core/utils/styles.dart';
 
@@ -30,10 +26,7 @@ class CustomButton extends StatelessWidget {
         style: TextButton.styleFrom(
           backgroundColor: backgroundColor,
           shape: RoundedRectangleBorder(
-            borderRadius: borderRadius ??
-                BorderRadius.circular(
-                  12,
-                ),
+            borderRadius: borderRadius ?? BorderRadius.circular(12),
           ),
         ),
         child: Text(

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:kitabi/constant.dart';
 import 'package:kitabi/features/splash/presentation/views/widgets/splash_view_body.dart';
@@ -8,8 +7,6 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SplashViewBody(),
-    );
+    return Scaffold(body: SplashViewBody());
   }
 }

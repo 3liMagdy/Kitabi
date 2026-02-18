@@ -1,7 +1,4 @@
-
-
-
-import 'package:flutter/material.dart' ;
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class CustomBookDetailsAppBar extends StatelessWidget {
@@ -20,10 +17,8 @@ class CustomBookDetailsAppBar extends StatelessWidget {
         ),
         IconButton(
           onPressed: () {},
-          icon: const Icon(
-            Icons.shopping_cart_outlined,
-          ),
-        )
+          icon: const Icon(Icons.shopping_cart_outlined),
+        ),
       ],
     );
   }

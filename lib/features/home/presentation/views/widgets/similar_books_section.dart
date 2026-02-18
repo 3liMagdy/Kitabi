@@ -1,7 +1,3 @@
-
-
-
-
 import 'package:flutter/material.dart';
 import 'package:kitabi/core/utils/styles.dart';
 import 'package:kitabi/features/home/presentation/views/widgets/similar_books_list_view.dart';
@@ -16,13 +12,9 @@ class SimilarBooksSection extends StatelessWidget {
       children: [
         Text(
           'You can also like',
-          style: Styles.textStyle14.copyWith(
-            fontWeight: FontWeight.w600,
-          ),
+          style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w600),
         ),
-        const SizedBox(
-          height: 16,
-        ),
+        const SizedBox(height: 16),
         const SimilarBooksListview(),
       ],
     );

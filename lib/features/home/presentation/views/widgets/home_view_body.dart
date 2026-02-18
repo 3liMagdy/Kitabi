@@ -33,7 +33,7 @@ class HomeViewBody extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 30),
           sliver: SliverList(
             delegate: SliverChildBuilderDelegate(
-                  (context, index) => Padding(
+              (context, index) => Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
                 child: BestSallerListViewItem(),
               ),
@@ -45,4 +45,3 @@ class HomeViewBody extends StatelessWidget {
     );
   }
 }
-

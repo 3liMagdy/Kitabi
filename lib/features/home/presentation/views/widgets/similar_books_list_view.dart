@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/material.dart';
 import 'package:kitabi/features/home/presentation/views/widgets/custom_book_item.dart';
 
@@ -9,17 +6,18 @@ class SimilarBooksListview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SizedBox(
+    return SizedBox(
       height: MediaQuery.of(context).size.height * .15,
       child: ListView.builder(
-          itemCount: 10,
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (context, index) {
-            return Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5),
-              child: CustomBookImage(),
-            );
-          }),
+        itemCount: 10,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 5),
+            child: CustomBookImage(),
+          );
+        },
+      ),
     );
   }
 }
