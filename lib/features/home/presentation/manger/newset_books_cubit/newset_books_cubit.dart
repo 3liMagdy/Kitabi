@@ -3,21 +3,21 @@ import 'package:equatable/equatable.dart';
 import 'package:kitabi/features/home/data/models/book_model.dart';
 import 'package:kitabi/features/home/data/repos/home_repo.dart';
 
-part 'featured_books_state.dart';
+part 'newset_books_state.dart';
 
-class FeaturedBooksCubit extends Cubit<FeaturedBooksState> {
-  FeaturedBooksCubit(this.homeRepo) : super(FeaturedBooksInitial());
+class NewsetBooksCubit extends Cubit<NewsetBooksState> {
+  NewsetBooksCubit(this.homeRepo) : super(NewsetBooksInitial());
 
-  final HomeRepo homeRepo;
+   final HomeRepo homeRepo;
   
  Future<void> fetchFeaturedBooks() async{
-  emit(FeaturedBooksLoading());
+  emit(NewsetBooksLoading());
   var result =await homeRepo.fetchFeaturedBooks();
 
   result.fold((failure){
-    emit(FeaturedBooksFailure(failure.errMessage));
+    emit(NewsetBooksFailure(failure.errMessage));
   }, (books){
-   emit(FeaturedBooksSuccess(books));
+   emit(NewsetBooksSuccess(books));
   });
   
  }
