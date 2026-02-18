@@ -13,7 +13,10 @@ class IndustryIdentifier extends Equatable {
     );
   }
 
-  Map<String, dynamic> toJson() => {'type': type, 'identifier': identifier};
+  Map<String, dynamic> toJson() => {
+        'type': type,
+        'identifier': identifier,
+      };
 
   @override
   List<Object?> get props => [type, identifier];
