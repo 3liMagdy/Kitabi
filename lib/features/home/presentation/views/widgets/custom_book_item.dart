@@ -1,21 +1,20 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:kitabi/core/utils/assets.dart';
 
 class CustomBookImage extends StatelessWidget {
-  const CustomBookImage({super.key});
-
+  const CustomBookImage(this.imageUrl, {super.key});
+final String imageUrl;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       child: AspectRatio(
         aspectRatio: 2.7 / 4,
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16),
-            image: DecorationImage(
-              image: AssetImage(AssetsData.test_image),
-              fit: BoxFit.fill,
-            ),
+        child:CachedNetworkImage(
+          fit: BoxFit.fill,
+          imageUrl: imageUrl,
+          errorWidget: (context, url, error) => const Icon(
+            Icons.error,
           ),
         ),
       ),
