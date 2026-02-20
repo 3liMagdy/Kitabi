@@ -46,5 +46,21 @@ class HomrRepoImpl extends HomeRepo {
       return Left(failure);
     }
   }
+
+    @override
+  Future<Either<Failure, List<BookModel>>> fetchSimilarBooks(
+      {required String category}) async {
+    try {
+      final response = await api.get(EndPonits.newset_books);
+      List<BookModel> books = [];
+      for (var item in response['items']) {
+        books.add(BookModel.fromJson(item));
+      }
+
+      return right(books);
+    }on Failure catch (failure) {
+      return Left(failure);
+    }
+  }
    
 }
