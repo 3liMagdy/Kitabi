@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:kitabi/constant.dart';
 import 'package:kitabi/features/splash/presentation/views/widgets/splash_view_body.dart';
 

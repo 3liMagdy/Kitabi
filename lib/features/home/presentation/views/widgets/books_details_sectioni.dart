@@ -10,13 +10,13 @@ class BookDetailsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
-
+  
     return Column(
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * 0.2),
           child: Container(color: Colors.red, 
-          child: CustomBookImage("https://www.google.com/imgres?q=image%20flutter&imgurl=https%3A%2F%2Fopensource.google%2Fstatic%2Fimages%2Fprojects%2Fos-projects-flutter.svg&imgrefurl=https%3A%2F%2Fopensource.google%2Fprojects%2Fflutter&docid=PPg_UwLTAFMAKM&tbnid=F86oq0XEEnrp2M&vet=12ahUKEwiYm8rVuOSSAxUn3gIHHRk5KyQQnPAOegQIJhAB..i&w=800&h=450&hcb=2&ved=2ahUKEwiYm8rVuOSSAxUn3gIHHRk5KyQQnPAOegQIJhAB")),
+          child: CustomBookImage("")),
         ),
         const SizedBox(height: 43),
         Text(

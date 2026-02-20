@@ -1,18 +1,12 @@
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kitabi/constant.dart';
-import 'package:kitabi/core/utils/api/api_consumer.dart';
-import 'package:kitabi/core/utils/api/dio_consumer.dart';
 import 'package:kitabi/core/utils/app_router.dart';
 import 'package:kitabi/core/utils/service_locator.dart';
 import 'package:kitabi/features/home/data/repos/home_repo.dart';
-import 'package:kitabi/features/home/data/repos/homr_repo_impl.dart';
 import 'package:kitabi/features/home/presentation/manger/featured_books_cubit/featured_books_cubit.dart';
 import 'package:kitabi/features/home/presentation/manger/newset_books_cubit/newset_books_cubit.dart';
 
-import 'features/splash/presentation/views/splash_view.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 

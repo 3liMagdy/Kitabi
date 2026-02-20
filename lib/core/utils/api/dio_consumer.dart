@@ -1,7 +1,6 @@
 
 
 import 'package:dio/dio.dart';
-import 'package:kitabi/core/errors/exceptions.dart';
 import 'package:kitabi/core/errors/failures.dart';
 import 'package:kitabi/core/utils/api/api_consumer.dart';
 import 'package:kitabi/core/utils/api/api_interceptors.dart';

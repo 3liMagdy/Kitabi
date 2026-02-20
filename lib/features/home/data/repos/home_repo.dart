@@ -1,6 +1,6 @@
 
 import 'package:dartz/dartz.dart';
-import 'package:kitabi/core/errors/exceptions.dart';
+
 import 'package:kitabi/core/errors/failures.dart';
 import 'package:kitabi/features/home/data/models/book_model.dart';
 

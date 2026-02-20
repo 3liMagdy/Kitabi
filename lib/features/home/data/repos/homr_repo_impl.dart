@@ -1,6 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:dio/dio.dart';
-import 'package:kitabi/core/errors/exceptions.dart';
+
 import 'package:kitabi/core/errors/failures.dart';
 import 'package:kitabi/core/utils/api/api_consumer.dart';
 import 'package:kitabi/core/utils/api/end_ponits.dart';
@@ -32,7 +31,7 @@ class HomrRepoImpl extends HomeRepo {
   Future<Either<Failure, List<BookModel>>> fetchNewsetBooks() async{
        
      try{
-      final response = await api.get(EndPonits.fetch_books);
+      final response = await api.get(EndPonits.newset_books);
         List<BookModel> books = [];
       for (var item in response['items']) {
         try {

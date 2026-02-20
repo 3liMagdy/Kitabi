@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:go_router/go_router.dart';
-import 'package:kitabi/constant.dart';
 import 'package:kitabi/core/utils/app_router.dart';
 import 'package:kitabi/core/utils/assets.dart';
-import 'package:kitabi/features/home/presentation/views/home_view.dart';
 import 'package:kitabi/features/splash/presentation/views/widgets/slidingText.dart';
 
 class SplashViewBody extends StatefulWidget {
